@@ -1,0 +1,84 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about > div,
+.about > img {
+  width: 50%;
+}
+
+.about > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+}
+/* Media query to change display options of about section */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .about > div,
+  .about > img {
+    width: 100%;
+  }
+
+  .about > div:nth-child(odd) {
+    background-color: #0bf5f5;
+  }
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+body {
+  margin: 0;
+}
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  height: 60%;
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}

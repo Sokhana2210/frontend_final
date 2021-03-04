@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/register.css"/>
+
+  </head>
+  <body>
+    <div id="home">
+      <nav class="navbar">
+        <img src="..." alt="Logo" class="logo" />
+        <ul class="nav-links" id="nav-links">
+          <a href="index.html"><li class="nav-link">Home</li></a>
+          <li class="nav-link"><a href="#section2">About Us</a></li>
+          <li class="nav-link"><a href="register.html">Register/Login</a></li>
+          <li class="nav-link"><a href="bookings.html">Bookings</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+      </nav>
+       <!-- Sign-in/Register modal -->
+    <div class="flexbox">
+      <div class="content">
+        <!-- **login part **-->
+        <form id="sign-in-form" onsubmit="event.preventDefault(); userLogin()">
+          <div id="login" class="box show">
+            <div class="field">
+              <div class="sign-in">
+                Sign In<br /><small>Login to continue</small>
+              </div>
+            </div>
+            <div class="field">
+              <label>Username</label>
+              <input type="text" name="username" />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" />
+            </div>
+            <div class="field">
+              <a href="#" id="account" class="trouble"
+                >Don't have an account yet?</a
+              >
+            </div>
+            <div class="field">
+              <button type="submit" class="btn-sign-in">Sign In</button>
+            </div>
+          </div>
+        </form>
+        <!-- **register part** -->
+        <div id="register" class="box hide">
+          <div class="field">
+            <div class="sign-in">
+              Register<br /><small>Create your account</small>
+            </div>
+          </div>
+          <form
+            id="create-user"
+            action="https://limitless-river-33387.herokuapp.com/register/"
+            onsubmit="event.preventDefault(); createUser()"
+          >
+            <div class="field">
+              <label>Firstname</label>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="eg..Bonqi"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Lastname</label>
+              <input
+                type="text"
+                name="lastnamne"
+                placeholder="eg..Maart"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Username</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Nike Boy"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Phone Number</label>
+              <input
+                type="text"
+                name="phone-No"
+                placeholder="+27"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" required />
+            </div>
+            <div class="field">
+              <a href="#" id="back" class="trouble">Back to login</a>
+            </div>
+            <div class="field">
+              <button type="submit" class="btn-sign-in">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/reg.js"></script>
+    <script src="./scripts/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Sign-in/Register modal -->
+    <div class="flexbox">
+      <div class="content">
+        <!-- **login part **-->
+        <form id="sign-in-form" onsubmit="event.preventDefault(); userLogin()">
+          <div id="login" class="box show">
+            <div class="field">
+              <div class="sign-in">
+                Sign In<br /><small>Login to continue</small>
+              </div>
+            </div>
+            <div class="field">
+              <label>Username</label>
+              <input type="text" name="username" />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" />
+            </div>
+            <div class="field">
+              <a href="#" id="account" class="trouble"
+                >Don't have an account yet?</a
+              >
+            </div>
+            <div class="field">
+              <button type="submit" class="btn-sign-in">Sign In</button>
+            </div>
+          </div>
+        </form>
+        <!-- **register part** -->
+        <div id="register" class="box hide">
+          <div class="field">
+            <div class="sign-in">
+              Register<br /><small>Create your account</small>
+            </div>
+          </div>
+          <form
+            id="create-user"
+            action="https://limitless-river-33387.herokuapp.com/register/"
+            onsubmit="event.preventDefault(); createUser()"
+          >
+            <div class="field">
+              <label>Full name</label>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="eg.. John Doe"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Username</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="eg.. algebrainiac3435"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" required />
+            </div>
+            <div class="field">
+              <a href="#" id="back" class="trouble">Back to login</a>
+            </div>
+            <div class="field">
+              <button type="submit" class="btn-sign-in">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/bookings.js"></script>
+  </body>
+</html>
