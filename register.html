@@ -7,6 +7,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/register.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
 
   </head>
   <body>
@@ -25,7 +26,7 @@
     <div class="flexbox">
       <div class="content">
         <!-- **login part **-->
-        <form id="sign-in-form" onsubmit="event.preventDefault(); userLogin()">
+        <form id="reg-form" onsubmit="event.preventDefault(); createUser()">
           <div id="login" class="box show">
             <div class="field">
               <div class="sign-in">
@@ -112,7 +113,6 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./scripts/reg.js"></script>
     <script src="./scripts/main.js"></script>
 

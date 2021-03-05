@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookings</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="home">
@@ -21,46 +22,60 @@
       </nav>
       <h2>BOOKINGS</h2>
       <div class="form">
-        <img src="./images/Cream and Black Natural Makeup Beauty Logo(1).gif" />
-        <form onsubmit="event.preventDefault(); bookClient()">
-          <label for="fname">First name:</label><br />
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="firstname"
-          /><br />
-          <label for="lname">Last name:</label><br />
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="lastname"
-          /><br /><br />
-          <label for="phoneno">Phone number</label><br />
-          <input type="" id="phone-No" name="PhoneNO" placeholder="+27" /><br />
+        <div class="left">
+          <img
+            src="./images/Cream and Black Natural Makeup Beauty Logo(1).gif"
+          />
+        </div>
+        <div class="right">
+          <form
+            id="bookingForm"
+            onsubmit="event.preventDefault(); bookClient()"
+          >
+            <label for="fname">First name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="firstname"
+            /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="lastname"
+            /><br /><br />
+            <label for="phoneno">Phone number</label><br />
+            <input
+              type=""
+              id="phone-No"
+              name="PhoneNO"
+              placeholder="+27"
+            /><br />
 
-          <label for="pword">Number of people:</label><br />
-          <input
-            type="number"
-            id="pword"
-            name="no-of-ppl"
-            min="0"
-            value="*"
-          /><br />
+            <label for="pword">Number of people:</label><br />
+            <input
+              type="number"
+              id="pword"
+              name="no-of-ppl"
+              min="0"
+              value="*"
+            /><br />
 
-          <label for="cate">Category</label><br />
-          <select id="cate" name="cat" value="">
-            <br />
-            <option value="">Choose from the list below:</option>
-            <option>Acrylic</option>
-            <option>Gelish</option>
-            <option>Peddecure(Gelish)</option>
-            <option>Peddecure(Acrylic)</option>
-          </select>
+            <label for="cate">Category</label><br />
+            <select id="cate" name="cat" value="">
+              <br />
+              <option value="">Choose from the list below:</option>
+              <option>Acrylic</option>
+              <option>Gelish</option>
+              <option>Peddecure(Gelish)</option>
+              <option>Peddecure(Acrylic)</option>
+            </select>
 
-          <input type="submit" value="Submit" />
-        </form>
+            <input type="submit" value="Submit" />
+          <win
+        </div>
       </div>
     </div>
     <script src="./scripts/bookings.js"></script>

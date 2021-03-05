@@ -1,5 +1,6 @@
 function createUser() {
-  const inputs = document.getElementsByTagName("input");
+  form = document.getElementById("create-user");
+  const inputs = form.getElementsByTagName("input");
 
   fetch("http://127.0.0.1:5000/place/", {
     method: "POST",
@@ -17,6 +18,8 @@ function createUser() {
     .then((response) => response.json())
     .then((json) => {
       alert("Client has been successfully registered");
+      // window.location.href = "bookings.html";
+      console.log(json);
       document.getElementById("reg-form").reset();
     });
 }

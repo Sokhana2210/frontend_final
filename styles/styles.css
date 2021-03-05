@@ -150,3 +150,14 @@ html {
 .reg {
   display: none;
 }
+
+.form {
+  display: flex;
+  padding: 1%;
+}
+.right {
+  justify-content: right;
+}
+.left {
+  justify-content: left;
+}

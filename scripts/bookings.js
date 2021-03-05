@@ -16,7 +16,8 @@ function bookClient() {
     .then((response) => response.json())
     .then((json) => {
       alert("Booking has been successfully made");
-      document.getElementById("reg-form").reset();
+      let bookingForm = document.getElementById("bookingForm");
+      bookingForm.reset();
     });
 }
 
