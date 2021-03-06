@@ -18,7 +18,7 @@ function createUser() {
     .then((response) => response.json())
     .then((json) => {
       alert("Client has been successfully registered");
-      // window.location.href = "bookings.html";
+      window.location.href = "bookings.html";
       console.log(json);
       document.getElementById("reg-form").reset();
     });
