@@ -82,3 +82,9 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite;
 }
+
+@media only screen and (max-width: 5020px) {
+  .slider {
+    display: flex;
+  }
+}

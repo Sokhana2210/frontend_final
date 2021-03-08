@@ -20,32 +20,3 @@ function bookClient() {
       bookingForm.reset();
     });
 }
-
-// func to switch login to reg
-
-function switchReg() {
-  let login = document.getElementById("login");
-  let reg = document.getElementById("reg");
-
-  login.style.display = "none";
-  reg.style.display = "grid";
-}
-
-//jquery stuff for modal
-$(document).ready(function () {
-  $("#account").on("click", function () {
-    $("#login").addClass("hide");
-    $("#login").removeClass("show");
-    $("#register").addClass("show");
-    $("#register").removeClass("hide");
-    $(".content").addClass("high");
-  });
-
-  $("#back").on("click", function () {
-    $("#login").addClass("show");
-    $("#login").removeClass("hide");
-    $("#register").addClass("hide");
-    $("#register").removeClass("show");
-    $(".content").removeClass("high");
-  });
-});

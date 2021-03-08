@@ -100,3 +100,98 @@ hr {
     width: 100%;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 1000px;
+  background-color: #999;
+  font-family: raleway, sans-serif;
+}
+.clearfix {
+  clearfix: both;
+}
+/* ===================
+   start contact-us-2
+==================== */
+.contact-us-2 {
+  background-color: #222;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  color: #fff;
+}
+.contact-us-2 .container > div {
+  width: 90%;
+  margin: auto;
+}
+.contact-us-2 .container > div .social-media,
+.contact-us-2 .container > div .get-in-touch,
+.contact-us-2 .container > div .mab {
+  width: 32%;
+  text-align: center;
+  float: left;
+}
+.contact-us-2 .container > div .social-media h2 {
+  line-height: 3em;
+  color: #0071bc;
+}
+.contact-us-2 .container > div .social-media p {
+  line-height: 1.2em;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.contact-us-2 .container > div .social-media > div {
+  padding-top: 20px;
+}
+.contact-us-2 .container > div .social-media > div i {
+  border: 1px solid #fff;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #0071bc;
+  font-size: 20px;
+}
+.contact-us-2 .container > div .get-in-touch h2 {
+  line-height: 3em;
+  text-align: left;
+  padding-left: 19%;
+  color: #0071bc;
+}
+.contact-us-2 .container > div .get-in-touch hr {
+  width: 30%;
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+.contact-us-2 .container > div .get-in-touch > div {
+  padding-left: 15%;
+}
+.contact-us-2 .container > div .get-in-touch > div i {
+  width: 10%;
+  float: left;
+  padding: 1%;
+  margin: 4px;
+  color: #0071bc;
+  font-size: 20px;
+}
+.contact-us-2 .container > div .get-in-touch > div p {
+  width: 80%;
+  float: right;
+  margin: 3px;
+  text-align: left;
+  padding: 1%;
+  line-height: 1.5em;
+}
+.contact-us-2 .container > div .mab {
+  height: 250px;
+}
+.contact-us-2 .container > div .mab iframe {
+  width: 100%;
+  height: 90%;
+  padding-top: 20px;
+}
+/* ===================
+   end contact-us-2
+==================== */
