@@ -3,65 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="wrapper">
-        <div class="form-wrapper">
-          <h4>Add More Beauty To Your Email</h4>
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-              required
-            />
-            <input type="submit" id="submit" value="OK" class="submit" />
-          </form>
-        </div>
-        <div class="contact-wrapper">
-          <h4>Stay In Touch With PIXEL</h4>
-          <div class="wrapper">
-            <ul class="social-menu">
-              <li>
-                <a href="#"
-                  ><i class="fa fa-pinterest" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-instagram" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-youtube-play" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
-            <a class="contact-footer contact-tel" href="#"
-              ><i class="fa fa-phone" aria-hidden="true"></i>001-283-4892</a
-            >
-            <a class="contact-footer contact-email" href="#"
-              ><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an
-              email</a
-            >
-          </div>
-        </div>
-        <div class="copy-wrapper">
-          <h6>
-            <i class="fa fa-copyright" aria-hidden="true"></i> Theme, Logo,
-            Product Design by <a href="https://codepen.io/ann_">Ann</a>
-          </h6>
-        </div>
-      </div>
-    </section>
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/styles/preloader.css" />
+    <link rel="stylesheet" href="./assets/styles/navigation.css" />
+    <link rel="stylesheet" href="./assets/styles/landing.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+      <img src="..." alt="Logo" class="logo" />
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="./index.html">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
+        <li class="nav-link"><a href="./register.html">Register</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+    </nav>
+    <!-- Landing Page Section -->
+    <header class="landing">
+      <h1>title</h1>
+      <button>See More</button>
+    </header>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <img src="https://picsum.photos/600?random=1" alt="Image" />
+      <div>
+        <h2>Title</h2>
+        <h4>Subtitle</h4>
+      </div>
+      <div>
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          pariatur recusandae saepe placeat ipsam vitae. Suscipit, ducimus
+          adipisci unde porro earum, repudiandae ipsa autem nobis laborum
+          dolores non! Deleniti, quae!
+        </p>
+        <button>See More</button>
+      </div>
+      <img src="../frontend-review/assets/images/rsz_ii.jpg" alt="Img" />
+    </section>
+    <!-- Script Imports -->
+    <script>
+      function toggleNav() {
+        // Get links from navigation
+        const links = document.getElementById("nav-links");
+
+        //   Check styles on links
+        links.style.width == "0px"
+          ? (links.style.width = "100vw")
+          : (links.style.width = "0px");
+      }
+    </script>
+  </body>
 </html>
