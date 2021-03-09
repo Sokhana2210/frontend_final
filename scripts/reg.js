@@ -46,7 +46,7 @@ function login() {
 
   console.log(log);
 
-  if (log.length >= 0) {
+  if (log.length > 0) {
     alert(uname + " has successfully logged in");
     window.location.href = "bookings.html";
   } else {
