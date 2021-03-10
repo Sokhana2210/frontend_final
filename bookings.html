@@ -21,6 +21,11 @@
         <button class="hamburger" onclick="toggleNav()">Hamburger</button>
       </nav>
       <h2>BOOKINGS</h2>
+      <br>
+      <br>
+
+<a class="button" href="images/Pearl's Nail & Beauty.gif" target="_blank" >Pearl's Nail Beauty</a>
+
       <div class="form">
         <div class="left">
           <img
@@ -68,20 +73,43 @@
             /><br />
 
             <label for="cate">Category</label><br />
-            <select id="cate" name="cat" value="">
+            <select id="cate" name="cat">
               <br />
-              <option value="">Choose from the list below:</option>
-              <option>Acrylic</option>
-              <option>Gelish</option>
-              <option>Peddecure(Gelish)</option>
-              <option>Peddecure(Acrylic)</option>
-            </select>
+              Choose from the list below:
+              <input type="checkbox" id="Acrylic" name="vehicle1" value="Bike">
+  <label for="vehicle1">Acrylic</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Gelish Hands</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Gelish Pedicure</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Acrylic Pedicure</label><br><br>
+              
 
             <input type="submit" value="Submit" />
             <button>Sign-Out</button>
         </div>
       </div>
+      
+
+<footer class="footer">
+  <div class="footer-left">
+    <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
+  </div>
+  <div class="footer-icons">
+    <ul class="menu simple">
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+
+
     </div>
     <script src="./scripts/bookings.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

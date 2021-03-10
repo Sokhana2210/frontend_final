@@ -161,3 +161,56 @@ html {
 .left {
   justify-content: left;
 }
+
+.button {
+  color: #ffd1dc;
+  border: 2px;
+  display: inline-block;
+  width: auto;
+  border-radius: 13px;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 1em 0.2em;
+  background-color: #0bf5f5;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    background-color: pink;
+  }
+}
