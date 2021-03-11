@@ -3,7 +3,7 @@ function createUser() {
   form = document.getElementById("create-user");
   const inputs = form.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/place/", {
+  fetch("https://pearls2210.herokuapp.com//place/", {
     method: "POST",
     body: JSON.stringify({
       firstname: inputs[0].value,
@@ -19,6 +19,7 @@ function createUser() {
     .then((response) => response.json())
     .then((json) => {
       alert("Client has successfully registered");
+      window.location.href = "register/login";
       console.log(json);
       document.getElementById("reg-form").reset();
     });
@@ -28,7 +29,7 @@ function createUser() {
 //-----LOGIN DATA-----//
 let Users = [];
 
-fetch("http://127.0.0.1:5000/show_registered_users/")
+fetch("https://pearls2210.herokuapp.com//show_registered_users/")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);

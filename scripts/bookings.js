@@ -1,7 +1,7 @@
 function bookClient() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/insert/", {
+  fetch("https://pearls2210.herokuapp.com//insert/", {
     method: "POST",
     body: JSON.stringify({
       firstname: inputs[0].value,
@@ -20,3 +20,9 @@ function bookClient() {
       bookingForm.reset();
     });
 }
+// if (log.length > 0) {
+//   alert(uname + " has successfully logged in");
+//   window.location.href = "bookings.html";
+// } else {
+//   alert("Please Sign-In or Register to make a BOOKING");
+// }
