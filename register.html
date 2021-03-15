@@ -27,11 +27,11 @@
             </div>
             <div class="field">
               <label>Username</label>
-              <input type="text" name="username" />
+              <input type="text" id="username" name="username" />
             </div>
             <div class="field">
               <label>Password</label>
-              <input type="password" name="password" />
+              <input type="password" id="password" name="password" />
             </div>
             <div class="field">
               <a href="#" id="account" class="trouble"
@@ -52,7 +52,6 @@
           </div>
           <form
             id="create-user"
-            action="https://limitless-river-33387.herokuapp.com/register/"
             onsubmit="event.preventDefault(); createUser()"
           >
             <div class="field">

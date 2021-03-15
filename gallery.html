@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pearl's Nail & Beauty</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+  </head>
+  <body>
+    <!--Preloader-->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!--Navigation Section-->
+    <nav class="navbar">
+      <img src="..." alt="Logo" class="logo" />
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="#section2">About Us</a></li>
+        <li class="nav-link"><a href="register.html">Register/Login</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+      <a class="button" href="index.html" target="">Go Back</a>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--Gallery section-->
+    <section class="gallery" id="" style="height: 500px">
+      <h1>Nail Gallery</h1>
+      <div class="container">
+        <div class="button" onclick="shiftLeft()">
+          <img src="./images/hh.jpeg" alt="" />
+        </div>
+        <div class="cards-wrapper">
+          <ul class="cards__container">
+            <li class="box">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="./images/nn.jpeg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="/./images/rr.jpeg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="./images/rsz_ii.jpg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="./images/nail.jpeg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="./images/rsz_oo.jpg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box box--hide">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="/img/1.jpeg" alt="Forest" />
+              </a>
+            </li>
+            <li class="box box--hide">
+              <a target="_blank" href="/img/1.jpeg">
+                <img src="./images/rsz_pp.jpg" alt="Forest" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button" onclick="shiftRight()">
+          <img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/gallery.js"></script>
+  </body>
+</html>

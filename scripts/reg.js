@@ -1,9 +1,9 @@
 //-----Register Data-----//
 function createUser() {
-  form = document.getElementById("create-user");
+  const form = document.getElementById("create-user");
   const inputs = form.getElementsByTagName("input");
 
-  fetch("https://pearls2210.herokuapp.com//place/", {
+  fetch("https://pearls2210.herokuapp.com/place/", {
     method: "POST",
     body: JSON.stringify({
       firstname: inputs[0].value,
@@ -19,7 +19,7 @@ function createUser() {
     .then((response) => response.json())
     .then((json) => {
       alert("Client has successfully registered");
-      window.location.href = "register/login";
+      window.location.href = "bookings.html";
       console.log(json);
       document.getElementById("reg-form").reset();
     });
@@ -28,8 +28,7 @@ function createUser() {
 
 //-----LOGIN DATA-----//
 let Users = [];
-
-fetch("https://pearls2210.herokuapp.com//show_registered_users/")
+fetch("https://pearls2210.herokuapp.com/show_registered_users/")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -39,16 +38,19 @@ fetch("https://pearls2210.herokuapp.com//show_registered_users/")
 function login() {
   let inputs = document.getElementsByTagName("input");
 
-  let uname = inputs[0].value;
-  let pword = inputs[1].value;
+  let username = inputs[0].value;
+  let password = inputs[1].value;
   let log = Users.filter((users) => {
-    return users.username == uname && users.password == pword ? true : false;
+    return users.username == username && users.password == password
+      ? true
+      : false;
+    console.log(log);
   });
 
-  console.log(log);
+  console.log(Users);
 
   if (log.length > 0) {
-    alert(uname + " has successfully logged in");
+    alert(username + " has successfully logged in");
     window.location.href = "bookings.html";
   } else {
     alert("Please enter a valid username and password");

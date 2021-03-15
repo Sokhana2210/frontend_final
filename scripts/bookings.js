@@ -9,6 +9,7 @@ function bookClient() {
       phone_number: inputs[2].value,
       category: inputs[3].value,
     }),
+
     headers: {
       "Content-Type": "application/json; charset=UTF-8",
     },

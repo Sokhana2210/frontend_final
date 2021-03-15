@@ -187,3 +187,16 @@ html {
     background-color: pink;
   }
 }
+.btn-sign-out {
+  color: black;
+  font-size: 16px;
+  background: #0bf5f5;
+  width: 50%;
+  height: 35px;
+  border: none;
+  margin: 10px 0 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: 0 -1px #0bf5f5;
+}
