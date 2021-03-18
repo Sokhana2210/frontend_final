@@ -20,8 +20,10 @@
         <li class="nav-link"><a href="index.html">Home</a></li>
         <li class="nav-link"><a href="#section2">About Us</a></li>
         <li class="nav-link"><a href="register.html">Register/Login</a></li>
+        <li class="nav-link"><a href="#section3">Contact Us</a></li>  
+
       </ul>
-      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+      <button class="hamburger" onclick="toggleNav()">Nav Bar</button>
     </nav>
 
     <!--Landing Page-->
@@ -63,7 +65,69 @@
 
       </div>
     </section>
+     <!--Contact section-->
+     <section class="about" id="section3" style="height: 500px">
+      <div id="home">
+        <div class="contact" style="position: absolute; top: 209vh">
+          <div class="text" style="text-align: center; font-size: 5vh">
+            Get in touch with us.
+          </div>
+          <div class="column right">
+            <div class="text">Message me</div>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/mpzovggz"
+              method="POST"
+            >
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" class="fullname" name="Name" />
+                </div>
+                <div class="field email">
+                  <input type="email" class="email-input" name="Email" />
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" class="subject" name="Subject" />
+              </div>
+              <div class="field textarea">
+                <textarea
+                  class="message"
+                  cols="30"
+                  rows="10"
+                  name="Message.."
+                ></textarea>
+              </div>
+              <div class="button-area">
+                <button class="send-msg" type="submit" name="send">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section start -->
+    <footer>
+      <span
+        >Created By <a href="">Sokhana Ndzube</a> |
+        <span class="far fa-copyright"></span> 2021 All rights reserved.</span
+      >
+      <a href="https://www.whatsapp.com/?lang=en"
+        ><i class="fa fa-whatsapp"></i
+      ></a>
+      <a href="https://github.com/Sokhana2210"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/zethu_ndzube"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/sokhana-ndzube-993a931a2/"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+    </footer>
 
+
+      </div>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
